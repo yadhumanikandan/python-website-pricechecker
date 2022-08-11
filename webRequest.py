@@ -16,7 +16,7 @@ def check_price():
 	extractPrice = float(price[1:7].replace(',',''))
 	print(extractPrice)
 
-	if extractPrice >= 30000:
+	if extractPrice <= 30000:
 		send_email()
 		print('email has been send')
 
